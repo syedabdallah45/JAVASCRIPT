@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+      h1{
+          background-color: darkblue;
+          color: white;
+         padding-left: 30px;
+         font-weight: 100;
+      }
+       .box{
+           display: flex;
+           padding: 23px;
+           margin: 23px;
+           
+       }
+       .funy{
+           padding-left: 10px;
+           
+       }    
+       #syed{
+           height: 25px;
+           width: 220px;
+       }
+       #ac{
+           width: 400px;
+           height: 25px;
+       }
+       .container{
+           background-color:whitesmoke;
+           width: 1000px;
+           margin: auto;
+           /* height: 700px; */
+          
+       }
+       #relation{
+           width: 150px;
+           height: 30px;
+           padding-left: 15px;
+       }
+      #m{
+          width: 330px;
+          height: 25px;
+      }
+      #name{
+          width: 400px;
+          height: 25px;
+      }
+      #rel{
+          width: 250px;
+          height: 30px;
+          padding-left: 15px;
+      }
+      #aadh{
+          width: 240px;
+          height: 25px;
+      }
+      #add{
+          width: 750px;
+          height: 25px;
+      }
+      #age{
+        height: 25px;
+      }
+      p{
+          padding-left: 23px;
+      }
+      @media screen and (max-width:800px) {
+        
+          .box{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+          }
+          .container{
+              width: 500px;
+              
+          }
+          main{
+              height: 300px;
+          }
+          #add{
+              max-width: 250px;
+          }
+      }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Account Holder information:</h1>
+          <div class="box">
+            
+            <div class="funy">
+            <label >Aadhar No.</label><br>
+            <input type="text" name="aadhar" id="syed">
+        </div>
+        <div class="funy">
+            <label >Mobile(whatsup)</label><br>
+            <input type="text" name="mobile" id="syed">
+        </div>
+        <div class="funy">
+            <label >Tel/mobile</label><br>
+            <input type="tel" name="tel" id="syed">
+        </div>
+           <div class="funy">
+            <label id="syed">Date of birth[mm/dd/yy]</label><br>
+            <input type="date" name="date" id="syed">
+        </div>
+    </div>
+             
+           <div class="box">
+            <div class="funy">
+                <label>Account Holder Name</label><br>
+                <input type="text" name="aadhar" id="ac">
+            
+            </div>
+            <div class="funy">
+                <label >Relation</label><br>
+                
+                <select name="relation" id="relation">
+                    <option value="rela">Son of</option>
+                    <option >mother</option>
+                    <option >father</option>
+                </select>
+            </div>
+            <div class="funy">
+                <label for="Name">Name</label><br>
+                <input type="text" name="name" id="m">
+            </div>
+        </div>
+           
+       
+      
+            <h1>Nominee information:</h1>
+          <div class="box">
+            
+            <div class="funy">
+            <label>Name</label><br>
+            <input type="text" name="aadhar" id="name">
+        </div>
+        <div class="funy">
+            <label >Relation</label><br>
+            
+            <select name="relation" id="rel">
+                <option value="rela">Son of</option>
+                <option >mother</option>
+                <option >father</option>
+            </select>
+        </div>
+        <div class="funy">
+            <label id="syed">Aadhar No.</label><br>
+            <input type="text" name="aadhar" id="aadh">
+        </div>
+        </div>
+        <div class="box">
+            <div class="funy">
+                <label>Address</label><br>
+                <input type="text" name="address" id="add">
+            
+            </div>
+          
+            <div class="funy">
+                <label for="Name">Age</label><br>
+                <input type="text" name="age" id="age">
+            </div>
+            
+        </div>
+        
+        <p>*The deposited amount will be handed over to the nominee. only in case of death of the A/c holder)</p>
+        </div>
+           
+             
+          
+      
+        
+    </main>
+</body>
+</html>
