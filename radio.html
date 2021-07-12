@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="btn" value="input button" onclick="fun()">
+    <input type="radio" id="rd1" value="HTML" name="course">html
+    <input type="radio" id="rd2" value="css" name="course" >css
+    <input type="radio" name="course" id="rd3" value="js">javascript
+    <script>
+        function fun(){
+            var rd1 = document.getElementById('rd1');
+            var rd2 =document.getElementById('rd2');
+            var rd3 =document.getElementById('rd3');
+            if(rd1.checked){
+                alert('the selected is'+rd1.value)
+            }else if (rd2.checked){
+                alert('the selected is'+rd2.value)
+            }else{
+                alert('the selected is '+ rd3.value)
+            }
+        }
+    </script>
+</body>
+</html>

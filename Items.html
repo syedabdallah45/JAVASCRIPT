@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    javascript:
+<input type="checkbox" name="course" value="javascript">
+.net:
+<input type="checkbox" name="course" value=".net">
+python:
+<input type="checkbox" name="course" value="python">
+<!-- <p>click the button to find out how many elements there are in the document that have a name attribute with the value "course".</p> -->
+<button onclick="myfunction()" > try it</button>
+<p id="demo"></p>
+<script>
+    // function myfunction(){
+    //     var x=document.getElementsByName("course").length;
+    //     document.getElementById('demo').innerHTML=x;
+    // }
+    function myfunction(){
+        var x=document.getElementsByName('course');
+        var i;
+        for(i=0; i < x.length;i++){
+        if(x[i].type=="checkbox"){
+            x[i].checked=true;
+        }
+        }
+    }
+</script>
+</body>
+</html>

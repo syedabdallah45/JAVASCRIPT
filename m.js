@@ -123,6 +123,21 @@
 
 // }while(j < arr.length);
 
+// operators in JS
+// var a=100;
+// var b=10;
+// console.log("the value of a+b is ", a+b);
+// console.log("the value of a-b is ", a-b);
+// console.log("the value of a*b is ", a*b);
+// console.log("the value of a/b is ", a/b);
+
+// assignment operator
+// var c= b;
+// c += 2;
+// c-=2;
+// c*=2;
+// c/=2;
+// console.log(c);
 // array methods
 // let myarr = ['fan','camera',34,null,true];
 // Array methods
@@ -296,7 +311,7 @@
 // console.log(mydate.g)
 
 // DOM manipulation
-// let elem= document.getElementById("click")
+// let elem= document.getElementById("js").innerHTML;
 // console.log(elem);
 
 // let elemclass=document.getElementsByClassName("container")
@@ -382,19 +397,35 @@
 //  })
 
 //  firstcontainer.addEventListener('mouseover', function(){
-  // console.log("mouse on container ")
+//   console.log("mouse on container ")
 // })
 
 // firstcontainer.addEventListener('mouseout', function(){
 //   console.log("clicked hua")
+// }) 
+// let prevHTML= document.querySelectorAll('.container')[1].innerHTML;
+// firstcontainer.addEventListener('mouseup', function(){
+//   document.querySelectorAll('.container')[1].innerHTML= prevHTML 
+//   console.log("mouseup when clicked on contianer")
 // })
-let prevHTML= document.querySelectorAll('.container')[1].innerHTML;
-firstcontainer.addEventListener('mouseup', function(){
-  document.querySelectorAll('.container')[1].innerHTML= prevHTML 
-  console.log("mouseup when clicked on contianer")
-})
 
-firstcontainer.addEventListener('mousedown', function(){
-  document.querySelectorAll('.container')[1].innerHTML = "<b>we have clicked<b> "
-  console.log("mouse down when clicked on container")
-})
+// firstcontainer.addEventListener('mousedown', function(){
+//   document.querySelectorAll('.container')[1].innerHTML = "<b>we have clicked<b> "
+//   console.log("mouse down when clicked on container")
+// })
+
+
+//  arrow functions
+// function summ(a,b){
+//   return a+b;
+// }
+// sum=(a,b)=>{
+//   return a+b;
+// }
+logkaro = ()=>{
+  document.querySelectorAll('.container')[1].innerHTML='set interval fired'
+  console.log('iam your log')
+}
+// set timeout and setInterval
+// setTimeout(logkaro,8000);
+clr=setInterval(logkaro,3000);

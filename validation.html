@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(image.jifi.jpg);
+        }
+       form{
+           margin: 300px;
+           /* background-image: url(image.jifi.jpg); */
+       }
+    </style>
+</head>
+<body>
+    <form  onsubmit="return validate()" action="checkbox.html">
+        <label  id='lbnu'   for="username">username</label>
+        <input type="text" id="username" placeholder="enterusername"><br>
+        <label for="password">password</label>
+        <input type="password" id="password" placeholder="enterpassword">
+        <br>
+        <button type="submit">login</button>
+    </form>
+    <script>
+        function validate(){
+            var username=document.getElementById('username');
+            var password=document.getElementById('password');
+            if(username.value==''|| password.value==''){
+            alert('username or password can not be blank.!');
+            return false;
+            }else{
+                return true
+            }
+
+        }
+    </script>
+</body>
+</html>
