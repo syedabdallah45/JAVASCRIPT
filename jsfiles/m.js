@@ -422,10 +422,97 @@
 // sum=(a,b)=>{
 //   return a+b;
 // }
-logkaro = ()=>{
-  document.querySelectorAll('.container')[1].innerHTML='set interval fired'
-  console.log('iam your log')
-}
+// logkaro = ()=>{
+//   document.querySelectorAll('.container')[1].innerHTML='set interval fired'
+//   console.log('iam your log')
+// }
 // set timeout and setInterval
 // setTimeout(logkaro,8000);
-clr=setInterval(logkaro,3000);
+// clr=setInterval(logkaro,3000);
+ 
+// adding the elements
+// console.log('this is tut 16')
+// let element = document.createElement('li');
+// let text= document.createTextNode('iam a text node');
+// element.appendChild(text)
+// // add a class name to the element
+// element.className= 'childul';
+// element.id= 'createdli'
+// element.setAttribute('title','mytitle');
+// // element.innerText='hello world'
+// let ul= document.querySelector('ul.this');
+// ul.appendChild(element);
+// console.log(ul)
+// console.log(element)
+
+// let elem2 = document.createElement('h3');
+// elem2.id= 'elem2'
+// elem2.className='elem2'
+// let tnode = document.createTextNode('this is a created node for elem2')
+// elem2.appendChild(tnode);
+// element.replaceWith(elem2)
+// let myul = document.getElementById('myul')
+// myul.replaceChild(element, document.getElementById('fui'));
+// myul.removeChild(document.getElementById('lui');)
+
+// let str ='python';
+// let links = document.links;
+// console.log(links);
+// let href;
+// Array.from(links).forEach(function(element){
+//     href=element.href;
+//     if (href.includes(str)){
+//         console.log(href)
+//     }
+// });
+
+
+// // localStorage
+// console.log('hello world')
+// let impArray =['adrak', 'pyaz', 'bhindi']
+// localStorage.setItem('name', 'syed')
+// localStorage.setItem('name2', 'huda')
+// localStorage.setItem('sabzi' , JSON.stringify(impArray))
+// localStorage.removeItem('name2');
+
+// let names= localStorage.getItem('name2')
+// names= JSON.parse(localStorage.getItem('sabzi'))
+// console.log(names)
+
+// console.log('heloo world')
+
+// let x=3;
+// let y=6;
+// let z;
+// z= x+y;
+// z= x-y;
+// z= x*y;
+// z= x/y;
+
+// exploring the math Object
+// z=Math;
+// z=Math.PI;
+// z=Math.E;
+// z=Math.round(5.3);
+// z=Math.ceil(5.3);
+// z=Math.floor(-5.3)
+// it converts the value to positive
+// z=Math.abs(-5)
+// it gives the squareroot
+// z=Math.sqrt(4)
+// z=Math.pow(2,3);
+// z=Math.min(2,3,5,2,645)
+// z=Math.max(233,333,454,5555)
+// z=Math.ceil(50+(100-50)*Math.random());
+// console.log(z);
+
+
+// // dates in js
+// let today =new Date();
+// console.log(typeof today)
+
+// let otherDate =new Date('8-4-2003 04:43:45')
+// console.log(otherDate);
+
+
+//  create a new Element
